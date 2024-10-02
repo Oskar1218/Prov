@@ -1,0 +1,83 @@
+uppgift 1
+
+public class Uppgift1 {
+    public static void main(String args[]) {
+        
+        int a = 5;
+        int b = 10;
+        int c = 25;
+        int d = 75;
+        int e = 125;
+        
+        System.out.println("Values:");
+        System.out.println("a" + a);
+        System.out.println("b" + b);
+        System.out.println("c" + c);
+        System.out.println("d" + d);
+        System.out.println("e" + e);
+        
+    }
+}
+
+uppgift 2
+
+public class Uppgift2 {
+    public static void main(String args[]) {
+        int[] array1 = {5, 10, 25, 75, 125};
+        int[] array2 = {50, 100, 250, 750, 25};
+        
+        int sum1 = calculateSum(array1);
+        int sum2 = calculateSum(array2);
+        
+        System.out.println("sum of array1: " + sum1);
+        System.out.println("sum of array2: " + sum2);
+        
+        if (sum2 !=0) {
+            double
+        divisionResult = (double) sum1 / sum2;
+            
+        System.out.println("Result of Sum1 / Sum2: " + divisionResult);
+        } else{
+            
+        System.out.println("Division by zero is not allowed.");
+        
+        int[] newArray1 = removeFirstElement(array1);
+        int[] newArray2 = removerLastELement(array2);
+        
+        int newSum1 = calculateSum(newArray1);
+        int newSum2 = calculateSum(newArray2);
+        
+        System.out.println("New sum of Array1 after removal: " + newSum1);
+        System.out.println("New sum of array2 after removal: " + newSum2);
+        }
+        public static int calculateSum(int[] array) {
+            int sum = 0;
+            for (int value : array) {
+                sum += value;
+            }
+            return sum;
+        }
+        public static int[]removeFirstElement(int[]array) {
+            int[] newArray = new int[array.length - 1];
+        System.arraycopy(array, 1, newArray, 0, array.length-1);
+        return newArray;
+        }
+        
+        public static int[]
+                removeLastElement(int[]array) {
+                    int[] newArray = new int[array.length - 1];
+                    
+                    System.arraycopy(array, 0, newArray, 0, array.length - 1);
+                    return newArray;
+                }
+    }
+}
+
+uppift 3
+
+public class Uppgift3 {
+    public static void main(String args[]){
+for (int i = 0; i < 5; i++) {
+    System.out.println("Number: " + i);
+    }
+}
